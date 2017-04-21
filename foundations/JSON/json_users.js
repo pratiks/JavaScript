@@ -1,10 +1,12 @@
 var request = require('request');
 var Promise = require('bluebird');
-var token = "";
+var stringify = require("json-stringify-pretty-compact");
 
-exports.Rooms = function () {
+var token = "10L5vdpS5Na9ji0Utd3YLk6jt5ShAgcEujdhzJJr";
+
+exports.Users = function () {
     var options = ({
-        url: 'https://api.hipchat.com' + '/v2/room',
+        url: 'https://api.hipchat.com' + '/v2/user',
         method: "get",
         headers: {
             'Accept': 'application/json',
@@ -20,8 +22,8 @@ exports.Rooms = function () {
             if (response.statusCode == 200) {
 
                 body = (JSON.parse(body));
-                var rooms = (body.items[0]);
-                resolve(rooms)
+                var users = (body);
+                resolve(users)
 
             }
             if (response.statusCode != 200 || response.statusCode === null) {
@@ -32,11 +34,16 @@ exports.Rooms = function () {
     })} ;
 
 
-exports.Rooms().then(function(hipchat_rooms){
-   var current_rooms = hipchat_rooms;
-   console.log(current_rooms);
+exports.Users().then(function(hipchat_users){
+   var empire_users = hipchat_users;
+   console.log(stringify(empire_users));
+
+    // FOR LOOP
+
+    // ORGANIZE DATA
 
 
+    // SAVE TO DATABASE
 
 
 });

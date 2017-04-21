@@ -16,6 +16,8 @@
  - Passing a variable to another variable
  - A constant vs. variable
 
+
+
  */
 
 
@@ -72,3 +74,4 @@ console.log(my_band);
 
 
 
+// FINAL THOUGHTS:  variable naming is important, its super critical! This is our developers understand the context of your program, use it help others read your code, DONT JUST NAME THINGS.
