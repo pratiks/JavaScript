@@ -65,8 +65,8 @@ console.log(band);
 const my_band = 'Filter';
 console.log(my_band);
 
-// Why did we get an error here??
-//my_band = "Metallica";
+// Can you see why we got an error here?
+my_band = "Metallica";
 console.log(my_band);
 
 
