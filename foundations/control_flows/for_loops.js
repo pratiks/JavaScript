@@ -61,3 +61,7 @@ function checkEmailIsValid(email_array) {
 
 my_valid_emails = checkEmailIsValid(emails);
 console.log(my_valid_emails);
+
+// What happens when I try to print the two arrays created in the function?
+// console.log(valid_emails);
+// console.log(invalid_emails);
